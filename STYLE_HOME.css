@@ -1,0 +1,1089 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containers {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+.left-container {
+  background-color: black;
+  height: 100%;
+  width: 30%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-container {
+  position: relative;
+  background-color: white;
+  height: 100%;
+  width: 70vw;
+}
+
+
+
+.center-container {
+  position: absolute;
+  top: 25vh;
+  left: 15vw;
+  height: 50vh;
+  width: 40vw;
+  background-image: url("https://images.unsplash.com/photo-1551522355-dbf80597eba8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  -webkit-box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  padding: 3rem;
+  font-size: 2rem;
+  font-family: "helvetica";
+}
+
+.info {
+  display: flex;
+  padding: 3rem;
+  font-size: 1rem;
+}
+
+.help {
+  text-decoration: none;
+  margin-left: 1rem;
+  color: white;
+}
+
+.story {
+  position: absolute;
+  height: 40%;
+  left: 30vw;
+  top: 30vh;
+}
+
+.story h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Garamond";
+}
+
+.story p {
+  margin-left: 0.7rem;
+  font-size: 1.2rem;
+  padding-right: 20rem;
+  font-family: "Garamond";
+}
+
+.story p:nth-child(3) {
+  margin-top: 5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "helvetica";
+}
+
+
+.social-container {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.social {
+  display: flex;
+}
+
+.social ul {
+  margin-right: 1rem;
+  font-weight: 700;
+  font-family: "helvetica";
+}
+
+.first-block {
+  position: absolute;
+  width: 0%;
+  height: 100vh;
+  background: black;
+  animation: go-left 4s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  left: 0;
+}
+.first-block_admin {
+  position: absolute;
+  width: 0%;
+  height: 100vh;
+  background:rgba(193, 189, 189, 0.623);
+  animation: go-left 4s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  left: 0;
+}
+
+.adm{
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
+  color: black;
+  display: flex;
+  justify-content: end;
+  padding:20px ;
+  margin: 10px;
+  margin-right: 10px;
+  padding-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+    
+
+
+}
+.adm:hover{
+  color: brown;
+  text-shadow: 8rem;
+}
+
+
+
+  .us{
+      
+    text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
+  color: black;
+  display: flex;
+  justify-content: end;
+  padding:20px ;
+  margin: 10px;
+  
+
+  }
+
+  .us:hover{
+    color: brown;
+    text-shadow: 8rem;
+  }
+
+@keyframes go-left {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0;
+  }
+}
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* size الحاجات اللي بعملها متطلعش بره ال */
+    scroll-behavior: smooth;
+}
+/*///////////////////////////////// Header  ////////////////////////////////*/
+header {
+  background-color: rgb(13, 13, 13);
+  width: 100%;
+  position: absolute; /* بيخلي الهيدر معايا علطول*/
+  z-index: 999; /* مفيش حلجة بتغطي علي الهيدر*/
+  justify-content: space-between; /*مسافة بين العناصر اللي في الهيدر*/
+  align-items: center;
+  display: flex;
+  padding: 0px 80px;
+} 
+header_admin {
+  background-color: rgba(243, 243, 243, 0.905);
+  width: 100%;
+  position: absolute; /* بيخلي الهيدر معايا علطول*/
+  z-index: 999; /* مفيش حلجة بتغطي علي الهيدر*/
+  justify-content: space-between; /*مسافة بين العناصر اللي في الهيدر*/
+  align-items: center;
+  display: flex;
+  padding: 20px 80px;
+}
+.logo {
+    text-decoration: none; /*الخط اللي تحت الكلام*/
+    color: rgb(220,220,220); /*cornflowerblue*/
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+    .logo i {
+        font-weight: 900;
+        font-size: 1.5em;
+    }
+
+.logo_admin {
+      text-decoration: none; /*الخط اللي تحت الكلام*/
+      color: rgb(27, 18, 18); /*cornflowerblue*/
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 2em;
+  }
+  
+.logo_admin i {
+          font-weight: 900;
+          font-size: 1em;
+      }    
+
+.AD{
+    color: rgb(220,220,220);
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 550;
+    padding-left: 45px;
+}
+
+    .AD:hover {
+        color: #78317dc8;
+    } 
+/*/////////////////////////////////// Section ////////////////////////////////////*/
+
+
+section {
+    padding: 40px 80px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+.main-btn {
+    color: #fff;
+    background-color:rgb(38, 39, 42);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px; /*انحناء الاطراف*/
+    margin-bottom: 30px; /*المسافة بين اللي تحته*/
+    transition: 1s ease; /*التكبير بيحصل في قد ايه من الوقت*/
+}
+
+    .main-btn:hover {
+        background-color: rgb(75, 71, 75);
+        transform: scale(1.1); /*اللي بيكبر الدائرة*/
+    }
+
+
+
+.social-icons a {
+    color: rgb(25, 49, 90);
+    font-size: 2em;
+    padding-right: 30px;
+    padding: 0em 0.4em;
+}
+
+    .social-icons a:hover {
+        background-color: rgb(32, 74, 157);
+        transform: scale(0.4);
+        border-radius: 15px; /*انحناء الاطراف*/
+        transition: 1s ease;
+        font-weight: 500;
+    }
+/*///////////////////////////////// section (services) //////////////////////*/
+
+
+
+/*///////////////////////////////// Section (Projects) ///////////////////////////////*/
+
+
+:root{
+    --form-height:550px;
+    --form-width: 900px;
+    /*  Sea Green */
+    --left-color: black;
+    /*  Light Blue  */
+    --right-color: #96dbe2;
+  }
+  
+  body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.5px;
+  }
+  
+  .container{
+    width: var(--form-width);
+    height: var(--form-height);
+    position: relative;
+    margin: auto;
+    box-shadow: 2px 10px 40px rgba(22,20,19,0.4);
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  /* 
+  ----------------------
+        Overlay
+  ----------------------
+  */
+  .overlay{
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    background-image: linear-gradient(to right, var(--left-color), var(--right-color));
+    border-radius: 10px;
+    color: white;
+    clip: rect(0, 385px, var(--form-height), 0);
+  }
+  
+  .open-sign-up{
+      animation: slideleft 1s linear forwards;
+  }
+  
+  .open-sign-in{
+      animation: slideright 1s linear forwards;
+  }
+  
+  .overlay .sign-in, .overlay .sign-up{
+    /*  Width is 385px - padding  */
+    --padding: 50px;
+    width: calc(385px - var(--padding) * 2);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px var(--padding);
+    text-align: center;
+  }
+  
+  .overlay .sign-in{
+    float: left;
+  }
+  
+  .overlay-text-left-animation{
+      animation: text-slide-in-left 1s linear;
+  }
+  .overlay-text-left-animation-out{
+      animation: text-slide-out-left 1s linear;
+  }
+  
+  .overlay .sign-up{
+    float:right;
+  }
+  
+  .overlay-text-right-animation{
+      animation: text-slide-in-right 1s linear;
+  }
+  
+  .overlay-text-right-animation-out{
+      animation: text-slide-out-right 1s linear;
+  }
+  
+  
+  .overlay h1{
+    margin: 0px 5px;
+    font-size: 2.1rem;
+  }
+  
+  .overlay p{
+    margin: 20px 0px 30px;
+    font-weight: 200;
+  }
+  /* 
+  ------------------------
+        Buttons
+  ------------------------
+  */
+  .switch-button, .control-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: none;
+    border-radius: 20px;
+    color: white;
+  }
+  
+  .switch-button{
+    border: 2px solid;
+  }
+  
+  .control-button{
+    border: none;
+    margin-top: 15px;
+  }
+  
+  .switch-button:focus, .control-button:focus{
+    outline:none;
+  }
+  
+  .control-button.up{
+    background-color: var(--left-color);
+  }
+  
+  .control-button.in{
+    background-color: var(--right-color);
+  }
+  
+  /* 
+  --------------------------
+        Forms
+  --------------------------
+  */
+  .form{
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+  }
+  
+  .form .sign-in, .form .sign-up{
+    --padding: 50px;
+    position:absolute;
+      /*  Width is 100% - 385px - padding  */
+    width: calc(var(--form-width) - 385px - var(--padding) * 2);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px var(--padding);
+    text-align: center;
+  }
+  
+  /* Sign in is initially not displayed */
+  .form .sign-in{
+    display: none;
+  }
+  
+  .form .sign-in{
+    left:0;
+  }
+  
+  .form .sign-up{
+    right: 0;
+  }
+  
+  .form-right-slide-in{
+    animation: form-slide-in-right 1s;
+  }
+  
+  .form-right-slide-out{
+    animation: form-slide-out-right 1s;
+  }
+  
+  .form-left-slide-in{
+    animation: form-slide-in-left 1s;
+  }
+  
+  .form-left-slide-out{
+    animation: form-slide-out-left 1s;
+  }
+  
+  .form .sign-in h1{
+    color: var(--right-color);
+    margin: 0;
+  }
+  
+  .form .sign-up h1{
+    color: var(--left-color);
+    margin: 0;
+  }
+  
+  .social-media-buttons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 15px;
+  }
+  
+  .social-media-buttons .icon{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #dadada;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 7px;
+  }
+  
+  .small{
+    font-size: 13px;
+    color: grey;
+    font-weight: 200;
+    margin: 5px;
+  }
+  
+  .social-media-buttons .icon svg{
+    width: 25px;
+    height: 25px;
+  }
+  
+  #sign-in-form input, #sign-up-form input{
+    margin: 12px;
+    font-size: 14px;
+    padding: 15px;
+    width: 260px;
+    font-weight: 300;
+    border: none;
+    background-color: #e4e4e494;
+    font-family: 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.5px;
+    padding-left: 20px;
+  }
+  
+  #sign-in-form input::placeholder{
+    letter-spacing: 1px;
+  }
+  
+  .forgot-password{
+    font-size: 12px;
+    display: inline-block;
+    border-bottom: 2px solid #efebeb;
+    padding-bottom: 3px;
+  }
+  
+  .forgot-password:hover{
+    cursor: pointer;
+  }
+  
+  /* 
+  ---------------------------
+      Animation
+  ---------------------------
+  */
+  @keyframes slideright{
+    0%{
+      clip: rect(0, 385px, var(--form-height), 0);
+    }
+    30%{
+          clip: rect(0, 480px, var(--form-height), 0);
+    }
+    /*  we want the width to be slightly larger here  */
+    50%{
+       clip: rect(0px, calc(var(--form-width) / 2 + 480px / 2), var(--form-height), calc(var(--form-width) / 2 - 480px / 2));
+    }
+    80%{
+           clip: rect(0px, var(--form-width), var(--form-height), calc(var(--form-width) - 480px));
+    }
+    100%{
+       clip: rect(0px, var(--form-width), var(--form-height), calc(var(--form-width) - 385px));
+    }
+  }
+  
+  @keyframes slideleft{
+    100%{
+      clip: rect(0, 385px, var(--form-height), 0);
+    }
+    70%{
+          clip: rect(0, 480px, var(--form-height), 0);
+    }
+    /*  we want the width to be slightly larger here  */
+    50%{
+       clip: rect(0px, calc(var(--form-width) / 2 + 480px / 2), var(--form-height), calc(var(--form-width) / 2 - 480px / 2));
+    }
+    30%{
+           clip: rect(0px, var(--form-width), var(--form-height), calc(var(--form-width) - 480px));
+    }
+    0%{
+       clip: rect(0px, var(--form-width), var(--form-height), calc(var(--form-width) - 385px));
+    }
+  }
+  
+  @keyframes text-slide-in-left{
+    0% {
+      padding-left: 20px;
+    }
+    100% {
+      padding-left: 50px;
+    }
+  }
+  
+  @keyframes text-slide-in-right{
+    0% {
+      padding-right: 20px;
+    }
+    100% {
+      padding-right: 50px;
+    }
+  }
+  
+  @keyframes text-slide-out-left{
+    0% {
+      padding-left: 50px;
+    }
+    100% {
+      padding-left: 20px;
+    }
+  }
+  
+  @keyframes text-slide-out-right{
+    0% {
+      padding-right: 50px;
+    }
+    100% {
+      padding-right: 20px;
+    }
+  }
+  
+  @keyframes form-slide-in-right{
+    0%{
+      padding-right: 100px;
+    }
+    100%{
+      padding-right: 50px;
+    }
+  }
+  
+  @keyframes form-slide-in-left{
+    0%{
+      padding-left: 100px;
+    }
+    100%{
+      padding-left: 50px;
+    }
+  }
+  
+  @keyframes form-slide-out-right{
+    0%{
+      padding-right: 50px;
+    }
+    100%{
+      padding-right: 80px;
+    }
+  }
+  
+  @keyframes form-slide-out-left{
+    0%{
+      padding-left: 50px;
+    }
+    100%{
+      padding-left: 80px;
+    }
+}
+
+
+:root{
+  --form-height:550px;
+  --form-width: 900px;
+  /*  Sea Green */
+  --left-color: black;
+  /*  Light Blue  */
+  --right-color: #96dbe2;
+}
+
+body, html{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.container{
+  width: var(--form-width);
+  height: var(--form-height);
+  position: relative;
+  margin: auto;
+  box-shadow: 2px 10px 40px rgba(22,20,19,0.4);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+/* 
+----------------------
+      Overlay
+----------------------
+*/
+.overlay{
+  width: 100%; 
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+  background-image: linear-gradient(to right, var(--left-color), var(--right-color));
+  border-radius: 10px;
+  color: white;
+  clip: rect(0, 385px, var(--form-height), 0);
+}
+
+.open-sign-up{
+    animation: slideleft 1s linear forwards;
+}
+
+.open-sign-in{
+    animation: slideright 1s linear forwards;
+}
+
+.overlay .sign-in, .overlay .sign-up{
+  /*  Width is 385px - padding  */
+  --padding: 50px;
+  width: calc(385px - var(--padding) * 2);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px var(--padding);
+  text-align: center;
+}
+
+.overlay .sign-in{
+  float: left;
+}
+
+.overlay-text-left-animation{
+    animation: text-slide-in-left 1s linear;
+}
+.overlay-text-left-animation-out{
+    animation: text-slide-out-left 1s linear;
+}
+
+.overlay .sign-up{
+  float:right;
+}
+
+.overlay-text-right-animation{
+    animation: text-slide-in-right 1s linear;
+}
+
+.overlay-text-right-animation-out{
+    animation: text-slide-out-right 1s linear;
+}
+
+
+.overlay h1{
+  margin: 0px 5px;
+  font-size: 2.1rem;
+}
+
+.overlay p{
+  margin: 20px 0px 30px;
+  font-weight: 200;
+}
+/* 
+------------------------
+      Buttons
+------------------------
+*/
+.switch-button, .control-button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 140px;
+  height: 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: none;
+  border-radius: 20px;
+  color: white;
+}
+
+.switch-button{
+  border: 2px solid;
+}
+
+.control-button{
+  border: none;
+  margin-top: 15px;
+}
+
+.switch-button:focus, .control-button:focus{
+  outline:none;
+}
+
+.control-button.up{
+  background-color: var(--left-color);
+}
+
+.control-button.in{
+  background-color: var(--right-color);
+}
+
+/* 
+--------------------------
+      Forms
+--------------------------
+*/
+.form{
+  width: 100%; 
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.form .sign-in, .form .sign-up{
+  --padding: 50px;
+  position:absolute;
+    /*  Width is 100% - 385px - padding  */
+  width: calc(var(--form-width) - 385px - var(--padding) * 2);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px var(--padding);
+  text-align: center;
+}
+
+/* Sign in is initially not displayed */
+.form .sign-in{
+  display: none;
+}
+
+.form .sign-in{
+  left:0;
+}
+
+.form .sign-up{
+  right: 0;
+}
+
+.form-right-slide-in{
+  animation: form-slide-in-right 1s;
+}
+
+.form-right-slide-out{
+  animation: form-slide-out-right 1s;
+}
+
+.form-left-slide-in{
+  animation: form-slide-in-left 1s;
+}
+
+.form-left-slide-out{
+  animation: form-slide-out-left 1s;
+}
+
+.form .sign-in h1{
+  color: var(--right-color);
+  margin: 0;
+}
+
+.form .sign-up h1{
+  color: var(--left-color);
+  margin: 0;
+}
+
+.social-media-buttons{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 15px;
+}
+
+.social-media-buttons .icon{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dadada;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 7px;
+}
+
+.small{
+  font-size: 13px;
+  color: grey;
+  font-weight: 200;
+  margin: 5px;
+}
+
+.social-media-buttons .icon svg{
+  width: 25px;
+  height: 25px;
+}
+
+#sign-in-form2 input, #sign-up-form2 input{
+  margin: 12px;
+  font-size: 14px;
+  padding: 15px;
+  width: 260px;
+  font-weight: 300;
+  border: none;
+  background-color: #e4e4e494;
+  font-family: 'Helvetica Neue', sans-serif;
+  letter-spacing: 1.5px;
+  padding-left: 20px;
+}
+
+#sign-in-form2 input::placeholder{
+  letter-spacing: 1px;
+}
+
+.forgot-password{
+  font-size: 12px;
+  display: inline-block;
+  border-bottom: 2px solid #efebeb;
+  padding-bottom: 3px;
+}
+
+.forgot-password:hover{
+  cursor: pointer;
+}
+
+/* 
+---------------------------
+    Animation
+---------------------------
+*/
+@keyframes slideright{
+  0%{
+    clip: rect(0, 385px, var(--form-height), 0);
+  }
+  30%{
+        clip: rect(0, 480px, var(--form-height), 0);
+  }
+  /*  we want the width to be slightly larger here  */
+  50%{
+     clip: rect(0px, calc(var(--form-width) / 2 + 480px / 2), var(--form-height), calc(var(--form-width) / 2 - 480px / 2));
+  }
+  80%{
+         clip: rect(0px, var(--form-width), var(--form-height), calc(var(--form-width) - 480px));
+  }
+  100%{
+     clip: rect(0px, var(--form-width), var(--form-height), calc(var(--form-width) - 385px));
+  }
+}
+
+@keyframes slideleft{
+  100%{
+    clip: rect(0, 385px, var(--form-height), 0);
+  }
+  70%{
+        clip: rect(0, 480px, var(--form-height), 0);
+  }
+  /*  we want the width to be slightly larger here  */
+  50%{
+     clip: rect(0px, calc(var(--form-width) / 2 + 480px / 2), var(--form-height), calc(var(--form-width) / 2 - 480px / 2));
+  }
+  30%{
+         clip: rect(0px, var(--form-width), var(--form-height), calc(var(--form-width) - 480px));
+  }
+  0%{
+     clip: rect(0px, var(--form-width), var(--form-height), calc(var(--form-width) - 385px));
+  }
+}
+
+@keyframes text-slide-in-left{
+  0% {
+    padding-left: 20px;
+  }
+  100% {
+    padding-left: 50px;
+  }
+}
+
+@keyframes text-slide-in-right{
+  0% {
+    padding-right: 20px;
+  }
+  100% {
+    padding-right: 50px;
+  }
+}
+
+@keyframes text-slide-out-left{
+  0% {
+    padding-left: 50px;
+  }
+  100% {
+    padding-left: 20px;
+  }
+}
+
+@keyframes text-slide-out-right{
+  0% {
+    padding-right: 50px;
+  }
+  100% {
+    padding-right: 20px;
+  }
+}
+
+@keyframes form-slide-in-right{
+  0%{
+    padding-right: 100px;
+  }
+  100%{
+    padding-right: 50px;
+  }
+}
+
+@keyframes form-slide-in-left{
+  0%{
+    padding-left: 100px;
+  }
+  100%{
+    padding-left: 50px;
+  }
+}
+
+@keyframes form-slide-out-right{
+  0%{
+    padding-right: 50px;
+  }
+  100%{
+    padding-right: 80px;
+  }
+}
+
+@keyframes form-slide-out-left{
+  0%{
+    padding-left: 50px;
+  }
+  100%{
+    padding-left: 80px;
+  }
+}
+
+
+    
+
+/*///////////////////////////////////// Footer ////////////////////////////////////////*/
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 0em 3em;
+    display: flex;
+    font-style: italic;
+}
+.footer_admin {
+  background-color:rgba(193, 189, 189, 0.623);
+  color: rgb(46, 5, 5);
+  padding: 0em 3em;
+  display: flex;
+  font-style: italic;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 1em;
+    
+    
+}
+
+    .footer-title span {
+        color: rgb(120, 33, 7);
+    }
+
+.footer-title111 {
+    padding: 1.5em 1em;
+    color: rgb(81, 76, 76); /*cornflowerblue*/
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    font-style: normal;
+    
+ }
+ 

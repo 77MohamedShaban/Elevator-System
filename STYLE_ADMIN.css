@@ -1,0 +1,105 @@
+﻿.body_admin {
+    width: 100%;
+    min-height: 130vh;
+    display: flex;
+    align-items: center;
+    background-size: contain;
+    background-position: right;
+    background-attachment: fixed;
+    background-color: rgb(255, 255, 255);
+    background-image: url("image/admin_body.png");
+}
+
+
+    .body_admin h3 span {
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        color: rgb(110, 83, 83);
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+.admin-btn {
+    color: #fff;
+    background-color: rgb(85, 27, 70);
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.8375em 1.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px; /*انحناء الاطراف*/
+    margin-bottom: 10px; /*المسافة بين اللي تحته*/
+    transition: 1s ease; /*التكبير بيحصل في قد ايه من الوقت*/
+}
+
+.admin-btn-footer {
+    color: #fff;
+    background-color: rgb(38, 39, 42);
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.8375em 1.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    transition: 1s ease;
+}
+
+.admin-btn:hover {
+    background-color: rgb(89, 52, 93);
+    transform: scale(1.1); /*اللي بيكبر الدائرة*/
+}
+.toggle-button {
+   
+    color: #fff;
+    background-color:rgb(38, 39, 42);
+    text-decoration:  none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px; /*انحناء الاطراف*/
+    margin-bottom: 30px;/*المسافة بين اللي تحته*/
+    transition: 1s ease;
+   
+  }
+  .toggle-button:hover {
+    background-color: rgb(75, 71, 75);
+    transform: scale(1.1);/*اللي بيكبر الدائرة*/
+  }
+  .main-btn2{
+    color: #fff;
+    background-color:rgb(38, 39, 42);
+    text-decoration:  none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.937em 2.1em;
+    letter-spacing: 1px;
+    border-radius: 15px; 
+   
+    transition: 1s ease; 
+   
+  }
+  .main-btn-cover{
+    color: #fff;
+    background-color: rgb(38, 39, 42);
+    text-decoration:  none;
+    font-size: 1.1em;
+    font-weight: 500;
+    display: inline-block;
+    letter-spacing: 1px;
+    border-radius: 15px; /*انحناء الاطراف*/
+    transition: 1s ease; /*التكبير بيحصل في قد ايه من الوقت*/
+   
+  }
+  .main-btn2:hover {
+    background-color: rgb(75, 71, 75);
+    transform: scale(1.1);/*اللي بيكبر الدائرة*/
+  }
+  body{
+    background-image: url("image/2222222222.png");
+  }

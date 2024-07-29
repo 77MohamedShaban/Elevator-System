@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel=" stylesheet" href="STYLE_HOME.css">
+    <link rel=" stylesheet" href="STYLE_ADMIN.css" >
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+        <title>Admin</title>
+        <link rel="shortcut icon" href="image/admin_photo.png" />
+       
+</head>
+<body> 
+    
+    <div class="containers">
+        <header_admin>
+            <a href="#" class ="logo_admin"> ADMIN &nbsp;&nbsp;&nbsp; <i class="fa-solid fa-user-tie"></i> </a>
+            <div class="navigation">
+                <!--for links -->
+            </div>
+            </header_admin>
+
+        <div class="right-container">
+            <div class="first-block_admin"></div>
+            <section class="body_admin">
+              
+              <div>
+                  <h3> <br> <span> Number of elevatos : <span id="elevator_nums"> 1<!-- elevators  هنحط هنا عدد ال  --></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a class="admin-btn " href="#" > Change
+                        
+                      <ul style="display:none;">
+                          
+                        <li href="#"   class="admin-btn">1</li>
+                        <li href="#"   class="admin-btn">2</li>
+                        <li href="#"  class="admin-btn">3</li>
+                      </ul></a> 
+                    </h3>
+                  
+
+                  <h3> <span>The number of floors of the building : 15 </span></h3> 
+                  
+                  <div class ="main-btn-cover">
+                    <a class="toggle-button" href="#" > Choose an Elevator </a> 
+                       
+                    <ul style="display:none;">
+                        
+                      <li href="#"  class="main-btn2">1</li>
+                      <li href="#"  class="main-btn2">2</li>
+                      <li href="#" class="main-btn2">3</li>
+                    </ul>
+                   
+                  </div>
+                </div>
+            </section>
+            <div class="menu-container">
+               
+
+                <!-- <div class="menu">
+                  
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div> -->
+            </div>
+            <div class="story">
+                
+
+            </div>
+            <div class="social-container">
+                <li class="social">
+                    <!-- <ul>
+                    Facebook
+                  </ul>
+                  <ul>
+                    Instagram
+                  </ul>
+                  <ul>
+                    Twitter
+                  </ul> -->
+                </li>
+            </div>
+        </div>
+        
+
+    
+     
+    <footer class="footer_admin">
+      
+        <div>
+            <div><br><br><br><br> <p class="footer-title111"> Elevator &nbsp;&nbsp; <span id="elevator_num_choosing"> <!--    هنحط هنا رقم الاسنسير اللي اختاره من القائمة-->0   </span > </p></div>
+          <div>
+             <p class="footer-title">The elevator contains  <span id="user_nums">  <!-- اللي في الاسنسير users هنحط هنا رقم ال --> <a href="#" class="admin-btn-footer"> 0</a>  </span > users </p>
+          </div>
+          <div>
+             <p  class="footer-title">The elevator is on the floor <span id="floor_num">  <!-- floor هنحط هنا رقم ال --> <a href="#" class="admin-btn-footer">0  </a>   </span></p>
+           </div>
+           <div>
+            <p  class="footer-title">The elevator is <span id="moving_elev">  <!--   ( moving or not)هنحط هنا حالة الاسنسير --> <a href="#" class="admin-btn-footer"> ??</a> </span></p>
+          </div>
+          <div>
+            <p  class="footer-title">The elevator's door is <span id="the_door">  <!--  ( opend or closed)هنحط هنا حالة باب السنسير  --> <a href="#" class="admin-btn-footer"> ??</a>  </span></p>
+          </div>
+        </div>
+        
+    </footer>
+  </div>
+    <script type="text/javascript">
+        TweenMax.from(".left-container", 2, {
+          width: "0",
+          ease: Expo.easeInOut
+        });
+        TweenMax.from(".right-container", 2, {
+          delay: 1.5,
+          width: "0",
+          opacity: "0",
+          ease: Expo.easeInOut
+        });
+        TweenMax.from(".center-container", 2, {
+          delay: 3,
+          width: "0",
+          x: -20,
+          ease: Expo.easeInOut
+        });
+        TweenMax.from(".logo", 2, {
+          delay: 1.5,
+          y: 20,
+          opacity: 0,
+          ease: Expo.easeInOut
+        });
+        TweenMax.from(".logo_admin", 2, {
+          delay: 1.5,
+          y: 20,
+          opacity: 0,
+          ease: Expo.easeInOut
+        });
+        TweenMax.from(".info", 2, {
+          delay: 1.5,
+          y: 50,
+          opacity: 0,
+          scale: 2.5,
+          ease: Expo.easeInOut
+        });
+        TweenMax.from(".story", 2, {
+          delay: 2.5,
+          y: 20,
+          opacity: 0,
+          ease: Expo.easeInOut
+        });
+        TweenMax.from(".menu", 2, {
+          delay: 3.5,
+          y: 20,
+          opacity: 0,
+          rotation: 90,
+          ease: Expo.easeInOut
+        });
+        TweenMax.staggerFrom(
+          ".social ul",
+          2,
+          {
+            delay: 3.8,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+          },
+          0.1
+        );
+        $(document).ready(function() {
+          $(".toggle-button").click(function() {
+            $(this).parent().find("ul").slideToggle(function() {
+              // Animation complete.
+            });
+          });
+        })
+        $(document).ready(function() {
+          $(".admin-btn").click(function() {
+            $(this).parent().find("ul").slideToggle(function() {
+              // Animation complete.
+            });
+          });
+        })
+        
+      </script>
+</body>
+</html>
+
